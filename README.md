@@ -6,7 +6,7 @@
 ![SQLite](https://img.shields.io/badge/database-SQLite-blue?style=flat-square&logo=sqlite)
 
 
-A simple Flask API for managing restaurants,pizzas and the relationship between them.
+> **A simple Flask API** for managing restaurants,pizzas and the relationship between them using **Flask**.
 
 ---
 
@@ -30,9 +30,55 @@ You need the following installed:
 - Operating System: **(Windows 10+, Linux 3.8+, or MacOS X 10.7+)**
 - Python version: 3.12+
 - Pipenv
-- Postman account (optional but recommended): [Create Account](https://www.postman.com/)
+- Postman account (optional but recommended): [Download](https://www.postman.com/)
 - RAM: **2GB minimum**, **4GB recommended** (for smoother development)
 - Free Disk Space: **1GB minimum**, **2GB recommended**
+---
+
+
+
+## **Installation**
+
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/Richard3wasonga/pizza-api-challenge 
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd restaurant-challenge
+   ```
+
+3. Install dependices:
+   ```bash
+   pipenv install
+   ```
+
+4. Activate python environment:
+   ```bash
+   pipenv shell
+   ```
+
+5. Run Migrations and Seed Data
+   ```bash
+   flask db init
+   flask db migrate -m "Initial"
+   flask db upgrade
+   python server/seed.py
+
+   ```
+
+6. Start the server
+   ```bash
+   python server/app.py
+   ```
+
+   open postman and make request to:
+   ```bash
+   http://127.0.0.1:5555
+   ```
+
 ---
 
 ## **Project Structure**
@@ -82,67 +128,6 @@ You need the following installed:
 ```
 
 
-## **Installation**
-
-
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/Richard3wasonga/pizza-api-challenge 
-   ```
-
-2. Navigate to the project directory:
-   ```bash
-   cd restaurant-challenge
-   ```
-
-3. Install dependices:
-   ```bash
-   pipenv install
-   ```
-
-4. Activate python environment:
-   ```bash
-   pipenv shell
-   ```
-
-5. Run Migrations and Seed Data
-   ```bash
-   flask db init
-   flask db migrate -m "Initial"
-   flask db upgrade
-   python server/seed.py
-
-   ```
-
-6. Start the server
-   ```bash
-   python server/app.py
-   ```
-
-   open postman and make request to:
-   ```bash
-   http://127.0.0.1:5555
-   ```
-
----
-
-## **MODEL Deliverables**
-
-### **Relationship**
-
-- A `Restaurant` has many `RestaurantPizzas`
-
-- A `pizza` has many `RestaurantPizzas`
-
-- A `RestaurantPizzas` belongs to a `Restaurant` and a `Pizza`
-
-![Table relationships](./screenshots/relationship.png)
-
-
-### **VALIDATIONS Deliverables**
-
-- `RestaurantPizza.price`: must be between **1** and **30**
-- Required fileds must be provided when creating `RestaurantPizza`
 
 ---
 
@@ -276,6 +261,25 @@ Create a new `RestaurantPizza` association:
 ![Post that failed](./screenshots/postf.png)
 
 ---
+
+## **Validation Rules**
+
+- `RestaurantPizza.price`: must be between **1** and **30**
+- Required fileds must be provided when creating `RestaurantPizza`
+
+
+## **MODEL & Relationship**
+
+- A `Restaurant` has many `RestaurantPizzas`
+
+- A `pizza` has many `RestaurantPizzas`
+
+- A `RestaurantPizzas` belongs to a `Restaurant` and a `Pizza`
+
+![Table relationships](./screenshots/relationship.png)
+
+
+
 
 ## **Tech Stack**
 

@@ -92,7 +92,7 @@ You need the following installed:
 
 2. Navigate to the project directory:
    ```bash
-   cd recipe-challenge
+   cd restaurant-challenge
    ```
 
 3. Install dependices:

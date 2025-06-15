@@ -4,6 +4,8 @@ from sqlalchemy.orm import validates
 class RestaurantPizza(db.Model, SerializerMixin):
     __tablename__= 'restaurant_pizzas'
 
+    serialize_rules = ('-restaurant.restaurant_pizzas', '-pizza.pizza_restaurants')
+
     id = db.Column(db.Integer, primary_key=True)
     price db.Column(db.Integer, nullable=False)
     pizza_id = db.Column(db.Integer, db.ForeignKey('pizzas.id'), nullable=False)

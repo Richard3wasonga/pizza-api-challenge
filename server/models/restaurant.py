@@ -2,7 +2,9 @@ from . import db, SerializerMixin
 from sqlalchemy.ext.associationproxy import association_proxy
 
 class Restaurant(db.Model, SerializerMixin):
-    __tablename__='restaurants'
+    __tablename__= 'restaurants'
+
+    serialize_rules = ('-restaurant_pizzas.restaurant',)
 
     id = db.Columns(db.Integer, primary_key=True)
     name = db.Column(db.string, nullable=False)

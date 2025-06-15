@@ -12,5 +12,5 @@ class Pizza(db.Model, SerializerMixin):
     pizza_restaurants = db.relationship('RestaurantPizza', back_populates='pizza')
     restaurants = association_proxy('pizza_restaurants', 'restaurant')
 
-     def __repr__(self):
+    def __repr__(self):
         return f"<Pizza id={self.id}  name={self.name} ingridients={self.ingridients}>"

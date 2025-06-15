@@ -74,19 +74,19 @@ You need the following installed:
    ```
 
 **Option 2 - use `flask run`(recommended for development):**
-   **Linux/macOS**
+**Linux/macOS**
    ```bash
    export FLASK_APP=server/app.py
    export FLASK_ENV=development
    flask run
    ```
-   **Windows CMD**
+**Windows CMD**
    ```bash
    set FLASK_APP=server/app.py
    set FLASK_ENV=development
    flask run
    ```
-   **Windows PowerShell**
+**Windows PowerShell**
    ```bash
    $env:FLASK_APP = "server/app.py"
    $env:FLASK_ENV = "development"

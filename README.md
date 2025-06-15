@@ -35,10 +35,7 @@ You need the following installed:
 - Free Disk Space: **1GB minimum**, **2GB recommended**
 ---
 
-
-
 ## **Installation**
-
 
 1. Clone this repository:
    ```bash

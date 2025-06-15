@@ -1,6 +1,6 @@
 from flask import Blueprint, jsonify, make_response
-from server.models import db
-from server.models.pizza import Pizza
+from models import db
+from models.pizza import Pizza
 
 pizza_bp = Blueprint('pizza_bp', __name__, url_prefix='/pizzas')
 

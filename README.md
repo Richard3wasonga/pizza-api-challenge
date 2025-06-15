@@ -58,7 +58,7 @@ You need the following installed:
    ```
 
 5. Run Migrations and Seed Data
-> - Run `flask db init` **onlyonce** when the `migrations/` and `instance/` folders so not already exist.
+> - Run `flask db init` **only once**,  and only if the `migrations/` folder does not already exist.
    ```bash
    flask db init
    flask db migrate -m "Initial"

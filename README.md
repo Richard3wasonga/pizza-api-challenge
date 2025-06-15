@@ -68,7 +68,7 @@ You need the following installed:
 
 6. Start the server
 
-**Option 1 - Run directly with python:**
+   **Option 1 - Run directly with python:**
    ```bash
    python server/app.py
    ```

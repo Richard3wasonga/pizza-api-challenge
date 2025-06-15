@@ -67,11 +67,32 @@ You need the following installed:
    ```
 
 6. Start the server
+
+**Option 1 - Run directly with python:**
    ```bash
    python server/app.py
    ```
 
-   open postman and make request to:
+**Option 2 - use `flask run`(recommended for development):**
+   **Linux/macOS**
+   ```bash
+   export FLASK_APP=server/app.py
+   export FLASK_ENV=development
+   flask run
+   ```
+   **Windows CMD**
+   ```bash
+   set FLASK_APP=server/app.py
+   set FLASK_ENV=development
+   flask run
+   ```
+   **Windows PowerShell**
+   ```bash
+   $env:FLASK_APP = "server/app.py"
+   $env:FLASK_ENV = "development"
+   flask run
+   ```
+The app will now be running at:
    ```bash
    http://127.0.0.1:5555
    ```

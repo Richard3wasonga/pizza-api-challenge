@@ -1,4 +1,4 @@
-# **Pizza Restaurant Api**
+# **Pizza Restaurant API**
 
 ![Python](https://img.shields.io/badge/python-3.12-blue?style=flat-square&logo=python)
 ![Flask](https://img.shields.io/badge/Flask-Web%20API-black?style=flat-square&logo=flask)

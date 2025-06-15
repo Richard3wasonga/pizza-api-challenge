@@ -1,4 +1,4 @@
-from flask Blueprint, jsonify, make_response
+from flask import Blueprint, jsonify, make_response
 from server.models import db
 from server.models.pizza import Pizza
 
